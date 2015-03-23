@@ -1,0 +1,105 @@
+html, body {
+  height: 100%;
+}
+h1 {
+  text-align: center;
+}
+
+#container div {
+  border-right: 1px solid #333333;
+}
+  #container div div {
+    border: 1px solid #b31217;
+  }
+  #container #playlist {
+    position: absolute;
+    width: 500px;
+    height: 130px;
+    background: #343a3f;
+    top: -150px;
+    z-index: 1;
+    border-bottom: 1px solid #333333;
+  }
+  #container #toggle-playlist {
+    position: fixed;
+    width: 1em;
+    font-size: 15px;
+    letter-spacing: 40px;
+    left: 508px;
+    border-right: none;
+    cursor: pointer;
+    top: 10px;
+    overflow: hidden;
+  }
+  #container #description {
+    position: absolute;
+    width: 500px;
+    right: 130px;
+    bottom: 80px;
+    text-align: center;
+    color: #555555;
+    border: none;
+    font: normal normal normal 15px/normal 'Lucida Grande';
+  }
+  #container #video-title {
+    position: absolute;
+    right: 130px;
+    width: 500px;
+    bottom: 125px;
+    border-bottom: 1px solid #bfbfbb;
+    padding-bottom: 10px;
+    font: normal normal normal 30px/normal 'Lucida Grande';
+  }
+
+#current {
+  position: absolute;
+  width: 640px;
+  height: 390px;
+  border: 1px solid #333333;
+  right: 67px;
+  top: 50px;
+  background: black;
+}
+  #current h1 {
+    position: absolute;
+    width: 100%;
+    font: normal normal normal 20px/normal 'Lucida Grande';
+    color: #b31217;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+body {
+  background-color: #D9D9D4;
+  margin: 0;
+  font-family: Arial;
+  overflow: hidden;
+}
+
+#search {
+  position: absolute;
+  bottom: 30px;
+  width: 500px;
+  text-align: center;
+}
+
+#search input {
+  color: #b31217;
+  background-color: #fafafa;
+  border: 1px solid #333333;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-border-radius: 0px; /* workaround for ios safari */
+}
+
+#search button {
+  color: #b31217;
+  background-color: #fafafa;
+  border: 1px solid #333333;
+  border-left: none;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
